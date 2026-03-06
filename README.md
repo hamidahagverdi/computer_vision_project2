@@ -31,6 +31,7 @@ The following functionalities are implemented in this project:
 ---
 
 # <b>Project Structure</b>
+```plaintext
 computer-vision-color-project
 ├── main.py
 ├── README.md
@@ -47,3 +48,4 @@ computer-vision-color-project
 │ ├── grayscale
 │ ├── hsl_hsv
 │ └── quantization
+```
