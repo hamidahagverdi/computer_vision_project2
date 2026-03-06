@@ -1,12 +1,33 @@
-# Computer Vision Color Manipulation Project
-This project demonstrates several color processing techniques in Computer Vision using Python and OpenCV.
-The assignment focuses on manipulating and analyzing color information in images using different algorithms.
+# Computer Vision – Color Manipulation Assignment
 
-The assignment focuses on manipulating and analyzing color information in images using different algorithms.
-The following functionalities are implemented:
-Conversion of RGB images to Grayscale using weighted coefficients
-Comparison with averaging grayscale method
-Color Quantization
-Hue, Saturation, Brightness and Lightness manipulation
-Color similarity detection using CIEDE2000 (DeltaE) based on user mouse click
-The program processes multiple images and saves the results for visual comparison.
+This project demonstrates several **image color processing techniques** implemented using **Python and OpenCV**.  
+The goal of the assignment is to explore how color information can be transformed, analyzed, and compared using different computer vision algorithms.
+
+The program processes several captured images and applies different color manipulation techniques.  
+All results are stored in separate folders for easy comparison and evaluation.
+
+---
+
+# <b>Project Objectives</b>
+
+The following functionalities are implemented in this project:
+
+1. Convert RGB images to **Grayscale** using standard weighted coefficients.
+2. Compare the result with the **Averaging grayscale method**.
+3. Apply **Color Quantization** algorithms.
+4. Modify **Hue, Saturation, Brightness and Lightness** values.
+5. Detect similar colors using **CIEDE2000 color distance (DeltaE)** based on user mouse click.
+
+---
+
+# <b>Technologies Used</b>
+
+- <b>Python</b>
+- <b>OpenCV</b>
+- <b>NumPy</b>
+- <b>scikit-image</b>
+- <b>Matplotlib</b>
+
+---
+
+# <b>Project Structure</b>
