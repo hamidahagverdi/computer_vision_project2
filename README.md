@@ -31,3 +31,19 @@ The following functionalities are implemented in this project:
 ---
 
 # <b>Project Structure</b>
+computer-vision-color-project
+├── main.py
+├── README.md
+├── requirements.txt
+│
+├── images
+│ ├── original
+│ │ ├── indoor.jpeg
+│ │ ├── outdoor_daylight.jpeg
+│ │ └── outdoor_night.jpeg
+│
+├── output
+│ ├── deltaE
+│ ├── grayscale
+│ ├── hsl_hsv
+│ └── quantization
