@@ -69,3 +69,144 @@ You can install all dependencies using:
 
 ```bash
 pip install opencv-python numpy scikit-image matplotlib
+
+## <b>Installation</b>
+
+Clone the repository:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd YOUR_REPOSITORY_NAME
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## <b>How to Run the Project</b>
+
+Run the main program using:
+
+```bash
+python main.py
+```
+
+The program will:
+
+1. Load images from the **images/original/** folder.
+2. Apply the implemented color manipulation algorithms.
+3. Save processed results in the **output/** directory.
+
+For the color similarity experiment:
+
+- Click on a pixel in the image window.
+- The program will highlight colors similar to the selected color.
+
+---
+
+## <b>Implemented Features</b>
+
+### 1. Grayscale Conversion
+
+Two grayscale conversion methods are implemented.
+
+<b>Weighted Grayscale Method</b>
+
+This method uses perceptual coefficients:
+
+```
+Gray = 0.299R + 0.587G + 0.114B
+```
+
+These weights better represent how humans perceive brightness.
+
+<b>Averaging Method</b>
+
+```
+Gray = (R + G + B) / 3
+```
+
+Both results are compared to demonstrate visual and numerical differences between the two approaches.
+
+---
+
+### 2. Color Quantization
+
+Color quantization reduces the number of colors in an image while preserving the overall appearance.
+
+In this project:
+
+- Color clustering is applied
+- The number of color levels can be reduced
+
+This technique is commonly used for:
+
+- Image compression
+- Color palette simplification
+- Visualization improvement
+
+---
+
+### 3. Hue, Saturation, Brightness and Lightness Manipulation
+
+The image is converted into **HSV color space** to modify color properties.
+
+The following parameters are adjusted:
+
+- <b>Hue</b> – determines the color tone
+- <b>Saturation</b> – controls color intensity
+- <b>Brightness / Value</b> – controls lightness of the image
+
+All manipulations are performed while keeping values within valid ranges.
+
+---
+
+### 4. Color Similarity Detection using CIEDE2000
+
+This functionality detects colors similar to a selected pixel using the **CIEDE2000 color difference formula (DeltaE)**.
+
+<b>Process</b>
+
+1. User clicks on a pixel in the image.
+2. The selected color is extracted.
+3. The image is converted to **LAB color space**.
+4. DeltaE distance is calculated between the selected color and all other pixels.
+5. Pixels with small DeltaE values are marked as similar colors.
+
+CIEDE2000 is widely used because it models **human color perception** more accurately.
+
+---
+
+## <b>Results</b>
+
+The generated outputs demonstrate:
+
+- Differences between grayscale conversion methods
+- Effects of reducing color palettes
+- Impact of hue, saturation, and brightness changes
+- Detection of visually similar colors using DeltaE
+
+All results are saved inside the **output/** folder for analysis.
+
+---
+
+## <b>Author</b>
+
+<b>Hamida Hagverdiyeva</b>
+
+---
+
+## <b>Notes</b>
+
+- The program is implemented as a **standalone Python application** (not a Jupyter Notebook).
+- Images and outputs are organized into separate folders according to assignment requirements.
+- The code is written to be **clean, readable, and modular**.
